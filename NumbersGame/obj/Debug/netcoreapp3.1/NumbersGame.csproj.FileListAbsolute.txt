@@ -1,0 +1,13 @@
+C:\Users\bproo\Documents\coding\code401\numbersgame\NumbersGame\bin\Debug\netcoreapp3.1\NumbersGame.exe
+C:\Users\bproo\Documents\coding\code401\numbersgame\NumbersGame\bin\Debug\netcoreapp3.1\NumbersGame.deps.json
+C:\Users\bproo\Documents\coding\code401\numbersgame\NumbersGame\bin\Debug\netcoreapp3.1\NumbersGame.runtimeconfig.json
+C:\Users\bproo\Documents\coding\code401\numbersgame\NumbersGame\bin\Debug\netcoreapp3.1\NumbersGame.runtimeconfig.dev.json
+C:\Users\bproo\Documents\coding\code401\numbersgame\NumbersGame\bin\Debug\netcoreapp3.1\NumbersGame.dll
+C:\Users\bproo\Documents\coding\code401\numbersgame\NumbersGame\bin\Debug\netcoreapp3.1\NumbersGame.pdb
+C:\Users\bproo\Documents\coding\code401\numbersgame\NumbersGame\obj\Debug\netcoreapp3.1\NumbersGame.csprojAssemblyReference.cache
+C:\Users\bproo\Documents\coding\code401\numbersgame\NumbersGame\obj\Debug\netcoreapp3.1\NumbersGame.csproj.CoreCompileInputs.cache
+C:\Users\bproo\Documents\coding\code401\numbersgame\NumbersGame\obj\Debug\netcoreapp3.1\NumbersGame.AssemblyInfoInputs.cache
+C:\Users\bproo\Documents\coding\code401\numbersgame\NumbersGame\obj\Debug\netcoreapp3.1\NumbersGame.AssemblyInfo.cs
+C:\Users\bproo\Documents\coding\code401\numbersgame\NumbersGame\obj\Debug\netcoreapp3.1\NumbersGame.dll
+C:\Users\bproo\Documents\coding\code401\numbersgame\NumbersGame\obj\Debug\netcoreapp3.1\NumbersGame.pdb
+C:\Users\bproo\Documents\coding\code401\numbersgame\NumbersGame\obj\Debug\netcoreapp3.1\NumbersGame.genruntimeconfig.cache
