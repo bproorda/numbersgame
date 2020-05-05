@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices.WindowsRuntime;
 
 namespace NumbersGame
 {
@@ -32,7 +33,10 @@ namespace NumbersGame
                 int[] intialArray = new int[userSize];
                 Populate(intialArray);
                 Console.WriteLine("[{0}]", String.Join(", ", intialArray));
-                Console.WriteLine($"The sum is: {GetSum(intialArray)}");
+                int theSum = GetSum(intialArray);
+                Console.WriteLine($"The sum is: {theSum}");
+                int theProduct = GetProduct(intialArray, theSum);
+                Console.WriteLine($"The product is: {theProduct}");
                 Console.ReadLine();
             }
             catch (FormatException e)
@@ -67,6 +71,23 @@ namespace NumbersGame
                 sum = sum + array[i];
             }
             return sum;
+        }
+
+        public static int GetProduct(int[] array, int sum)
+        {
+            try
+            {
+                int length = array.Length;
+                Console.Write($"Enter a number between 1 and {length}: ");
+                int randomNumber = Convert.ToInt32(Console.ReadLine());
+                int product = sum * array[randomNumber];
+                return product;
+            }
+            catch (IndexOutOfRangeException e)
+            {
+                Console.WriteLine($"Index out of range: {e}");
+                return 0;
+            }
         }
     }
 }
