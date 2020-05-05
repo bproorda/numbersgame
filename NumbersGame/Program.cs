@@ -9,7 +9,6 @@ namespace NumbersGame
         {
             try
             {
-                Console.WriteLine("Hello World!");
                 StartSequence();
             }
             catch (Exception)
@@ -32,11 +31,13 @@ namespace NumbersGame
                 int userSize = Convert.ToInt32(Console.ReadLine());
                 int[] intialArray = new int[userSize];
                 Populate(intialArray);
-                Console.WriteLine("[{0}]", String.Join(", ", intialArray));
+                Console.WriteLine("The elements of the array are: {0}", String.Join(", ", intialArray));
+                Console.WriteLine($"Your array size: {intialArray.Length}");
                 int theSum = GetSum(intialArray);
-                Console.WriteLine($"The sum is: {theSum}");
+                Console.WriteLine($"The sum of the array is: {theSum}");
                 int theProduct = GetProduct(intialArray, theSum);
-                Console.WriteLine($"The product is: {theProduct}");
+                decimal theQuotient = GetQuotient(theProduct);
+               
                 Console.ReadLine();
             }
             catch (FormatException e)
@@ -80,12 +81,30 @@ namespace NumbersGame
                 int length = array.Length;
                 Console.Write($"Enter a number between 1 and {length}: ");
                 int randomNumber = Convert.ToInt32(Console.ReadLine());
-                int product = sum * array[randomNumber];
+                int product = sum * array[randomNumber - 1];
+                Console.WriteLine($"{sum} * {array[randomNumber - 1]} = {product}");
                 return product;
             }
             catch (IndexOutOfRangeException e)
             {
                 Console.WriteLine($"Index out of range: {e}");
+                return 0;
+            }
+        }
+        public static decimal GetQuotient(int product)
+        {
+            try
+            {
+                Console.Write($"Enter a number to divide {product} by: ");
+                decimal divisor = Convert.ToDecimal(Console.ReadLine());
+                decimal dividend = Convert.ToDecimal(product);
+                decimal answer = decimal.Divide(dividend, divisor);
+                Console.WriteLine($"{dividend} / {divisor} = {answer}");
+                return answer;
+            }
+            catch (DivideByZeroException e)
+            {
+                Console.WriteLine($"Cannot divide by zero: {e}");
                 return 0;
             }
         }
